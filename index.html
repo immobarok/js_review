@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <button id="press_button">Press Me</button>
+     <p id="heading_o"></p>
+</body>
+<script>
+     const press_button = document.getElementById("press_button");
+     const heading_o = document.getElementById("heading_o");
+
+     press_button.onclick=()=>{
+          const name = prompt("Enter your name ?");
+          alert(`Hello ${name}, nice to see you!!`);
+             heading_o.innerHTML = `Welcome,${prompt("What is your name ?")}`;
+          }
+</script>
+</html>
