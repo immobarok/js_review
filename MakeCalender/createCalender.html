@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 15px;
+      }
+      .container{
+          display: flex;
+          padding-top: 30px;
+          justify-content: space-between;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 240px;
+      }
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+        background-color: #4b0082;
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="Calendar">
+        <label for="month_select">Select month:</label>
+        <select name="month_select" id="month_select">
+          <option value="January">January</option>
+          <option value="February">February</option>
+          <option value="March">March</option>
+          <option value="April">April</option>
+          <option value="May">May</option>
+          <option value="June">June</option>
+          <option value="July">July</option>
+          <option value="August">August</option>
+          <option value="September">September</option>
+          <option value="October">October</option>
+          <option value="November">November</option>
+          <option value="December">December</option>
+        </select>
+      </div>
+      <div class="themeChange">
+        <label for="select_theme">Select theme:</label>
+        <select name="selectColor" id="selectTheme">
+          <option value="white">White</option>
+          <option value="black">Black</option>
+          <option value="teal">teal</option>
+        </select>
+      </div>
+    </div>
+
+    <h1>January</h1>
+    <ul>
+      <!-- Calendar days will be generated here by JavaScript -->
+    </ul>
+
+    <script src="./MakeCalender.js"></script>
+  </body>
+</html>
